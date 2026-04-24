@@ -194,8 +194,7 @@ export const seoData: SEODataType = {
   keywords: [
     "Jason",
     "Jason Aballe",
-    "@1Jason100",
-    "1Jason100",
+    "CLEMENTINE1996",
     "Portfolio",
     "Jason Portfolio ",
     "Jason Aballe Portfolio",
