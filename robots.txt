@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /*
+Host: developer-portfolio-clementine1996.vercel.app
