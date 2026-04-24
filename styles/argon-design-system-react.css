@@ -19,7 +19,7 @@
 /* Regular Font */
 @font-face {
     font-family: 'Channel';
-    src: url('/fonts/Channel-9zWK.ttf') format('truetype');
+    src: url('/portfolio-jason-aballe/fonts/Channel-9zWK.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,14 +27,14 @@
 /* Slanted / Italic Version */
 @font-face {
     font-family: 'Channel';
-    src: url('/fonts/ChannelSlanted1-nYjg.ttf') format('truetype');
+    src: url('/portfolio-jason-aballe/fonts/ChannelSlanted1-nYjg.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ChannelLeftSlanted';
-    src: url('/fonts/ChannelLeftSlanted-lBjd.ttf') format('truetype');
+    src: url('/portfolio-jason-aballe/fonts/ChannelLeftSlanted-lBjd.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

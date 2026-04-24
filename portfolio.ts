@@ -10,6 +10,7 @@ import {
   SocialLinksType,
   GreetingsType,
 } from "./types/sections";
+import { basePath } from "./constant";
 
 export const greetings: GreetingsType = {
   name: "Jason's Portfolio",
@@ -41,7 +42,7 @@ export const skillsSection: SkillsSectionType = {
   data: [
     {
       title: "Full Stack Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json",
+      lottieAnimationFile: `${basePath}/lottie/skills/fullstack.json`,
       skills: [
         emoji("⚡ Developing responsive web applications using Laravel, Vue.js, and Codeigniter"),
         emoji("⚡ Designing and managing MySQL, MSSQL, PostgreSQL, and SQLite databases"),
@@ -99,28 +100,28 @@ export const experience: ExperienceType[] = [
     role: "Full Stack Developer",
     company: "CPRAS",
     date: "Jan 01, 2024 - Apr 30, 2026",
-    companyLogo: "/portfolio-jason-aballe/img/icons/common/cpras_logo.png",
+    companyLogo: `${basePath}/img/icons/common/cpras_logo.png`,
     desc: "Main Developer for the B2B Procurement platform. Used Laravel, VueJS, and MySQL to manage UK government procurement opportunities and complex financial workflows.",
   },
   {
     role: "Full Stack Developer",
     company: "EBOS SG / EBOS PH",
     date: "May 01, 2022 - Nov 30, 2023",
-    companyLogo: "/portfolio-jason-aballe/img/icons/common/ebos_logo.png",
+    companyLogo: `${basePath}/img/icons/common/ebos_logo.png`,
     desc: "Enhanced marketplace and compliance platforms for Singapore clients. Integrated XERO, Stripe, and Sanction Scanner APIs using Laravel and Agile methodologies.",
   },
   {
     role: "Full Stack Developer",
     company: "Davao del Sur State College",
     date: "July 06, 2020 - May 25, 2022",
-    companyLogo: "/portfolio-jason-aballe/img/icons/common/dssc_logo.png",
+    companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
     desc: "Led the development of HRIS, Admission, and Scheduling systems and Application using Android Studio, Laravel, Codeigniter, and MySQL to automate institutional processes.",
   },
   {
     role: "IT Faculty",
     company: "Davao del Sur State College",
     date: "Sept 03, 2019 - June 26, 2020",
-    companyLogo: "/portfolio-jason-aballe/img/icons/common/dssc_logo.png",
+    companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
     desc: "Instructed students in programming, web development, and mobile development.",
   },
 ];

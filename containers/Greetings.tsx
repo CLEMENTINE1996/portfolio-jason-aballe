@@ -3,6 +3,7 @@ import { greetings } from "../portfolio";
 import { Button, Container, Row, Col } from "reactstrap";
 import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
+import { basePath } from "../constant";
 
 const Greetings = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Greetings = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="6">
-                  <GreetingLottie animationPath="/lottie/coding.json" />
+                  <GreetingLottie animationPath={`${basePath}/lottie/coding.json`} />
                 </Col>
                 <Col lg="6">
                   <h1 className="display-3 text-white">{greetings.title + " "}</h1>
