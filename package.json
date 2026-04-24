@@ -1,12 +1,15 @@
 {
+  "homepage": "https://CLEMENTINE1996.github.io/portfolio-jason-aballe",
   "name": "developer-portfolio",
   "version": "2.0.0",
   "description": "Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
   "main": "index.js",
-  "repository": "https://github.com/1Jason100/Jason-portfolio.git",
+  "repository": "https://github.com/CLEMENTINE1996/portfolio-jason-aballe.git",
   "author": "Jason Aballe",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
