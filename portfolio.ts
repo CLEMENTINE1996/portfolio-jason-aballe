@@ -190,7 +190,7 @@ export const seoData: SEODataType = {
   description: greetings.description,
   author: "Jason Aballe",
   image: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  url: "https://developer-portfolio-1Jason100.vercel.app",
+  url: "",
   keywords: [
     "Jason",
     "Jason Aballe",

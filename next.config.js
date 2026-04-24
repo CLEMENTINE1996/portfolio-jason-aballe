@@ -1,7 +1,9 @@
-module.exports = {
-  reactStrictMode: false,
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'export', 
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    unoptimized: true, 
   },
-  output: "standalone",
-};
+}
+
+module.exports = nextConfig
