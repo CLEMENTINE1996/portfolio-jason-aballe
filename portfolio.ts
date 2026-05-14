@@ -5,7 +5,6 @@ import {
   FeedbackType,
   ProjectType,
   SkillsSectionType,
-  SkillBarsType,
   SEODataType,
   SocialLinksType,
   GreetingsType,
@@ -99,13 +98,6 @@ export const skillsSection : SkillsSectionType = {
   ],
 };
 
-export const SkillBars: SkillBarsType[] = [
-  { Stack: "Backend (Laravel/PHP/Codeigniter)", progressPercentage: "85" },
-  { Stack: "Frontend (Vue/JS/Bootstrap)", progressPercentage: "85" },
-  { Stack: "Database Management (MySQL/MSSQL)", progressPercentage: "85" },
-  { Stack: "Programming (C#/Java/VB)", progressPercentage: "70" },
-];
-
 export const educationInfo: EducationType[] = [
   {
     schoolName: "Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)", // 
@@ -113,7 +105,7 @@ export const educationInfo: EducationType[] = [
     duration: "2015 - 2019", // 
     desc: "Academic Achievements & Certifications:",
     descBullets: [
-      "Best Capstone Award Winner (May 2019) ",
+      "Best in Capstone/Thesis Award Winner (May 2019) ",
       "Champion: SPAMAST I.T. Day Programming Competition (2017 & 2019) ",
       "TESDA: Computer Software Servicing NCII & Visual Graphics Designing NCIII ",
     ],
