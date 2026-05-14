@@ -44,19 +44,23 @@ export const skillsSection : SkillsSectionType = {
   categories: [
     {
       title: "Core Backend & Database",
-      skills: ["PHP (6 yrs)", "Laravel (5 yrs)", "MySQL", "PostgreSQL", "MSSQL", "RESTful APIs"], 
+      skills: ["PHP (6 yrs)", "Laravel (5 yrs)", "CodeIgniter (2 yrs)", "C# ASP.Net (1.5 yrs)", "MySQL", "PostgreSQL", "MSSQL", "SQLLite", "RESTful APIs"], 
     },
     {
       title: "Frontend & Design",
-      skills: ["JavaScript (6 yrs)", "Vue.js (2 yrs)", "React", "Tailwind CSS", "Bootstrap"], 
+      skills: ["JavaScript & jQuery (6 yrs)", "Vue.js (2 yrs)", "React", "Tailwind CSS", "Bootstrap"], 
+    },
+    {
+      title: "Mobile Application Development",
+      skills: ["Android Studio (2 yrs)", "Java"], 
     },
     {
       title: "Fintech & Integrations",
-      skills: ["XERO Accounting", "Stripe Payment", "Sanction Scanner", "API Architecture"], // 
+      skills: ["XERO Accounting", "Stripe Payment", "Sanction Scanner", "API Architecture"],
     },
     {
       title: "Tools & DevOps",
-      skills: ["Git/GitHub", "Docker", "cPanel", "Jira", "Postman", "VS Code", "Android Studio", "Joomla", "Visual Studio", "Sublime Text"], 
+      skills: ["Git/GitHub", "Docker", "cPanel", "Jira", "Postman", "VS Code", "Android Studio", "Joomla", "Visual Studio", "Sublime Text", "NetBeans"], 
     }
   ],
   data: [
@@ -64,7 +68,7 @@ export const skillsSection : SkillsSectionType = {
       title: "Full Stack Development",
       lottieAnimationFile: `${basePath}/lottie/skills/fullstack.json`,
       skills: [
-        "Native PHP (6 yrs) & Laravel (5 yrs)", // 
+        "Native PHP (6 yrs), Laravel (5 yrs), and CodeIgniter (2 yrs)", // 
         "JavaScript (6 yrs), Vue.js (2 yrs), & React", // 
         "ASP.Net, C#, Java, & Android Studio (2 yrs)", //
         "Database Management: MySQL, PostgreSQL, & SQLite (5 yrs)", // 
