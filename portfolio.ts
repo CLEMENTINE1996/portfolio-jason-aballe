@@ -188,7 +188,7 @@ export const projects: ProjectType[] = [
   },
   {
     name: "DSSC Human Resource Management System",
-    desc: "Unified school automation and HRM system for Davao del Sur State College. Involved full-stack web development and mobile integration to improve administrative efficiency.",
+    desc: "Unified school automation and HRM system for Davao del Sur State College. Involved full-stack web development and mobile integration to improve administrative efficiency. This includes Payroll, Employee Records, Document Tracking, Attendance Management, and etc.",
     tags: ["Codeigniter", "MySQL", "Android Studio", "PHP"],
     link: "http://hris2.dssc.edu.ph:1952/login",
   },
@@ -196,6 +196,12 @@ export const projects: ProjectType[] = [
     name: "Learning Resources Management System",
     desc: "An enterprise-level Library Resources (Digital books) platform developed during the global shift to remote education. Focused on scalable library resource delivery and user-friendly student interfaces.",
     tags: ["Laravel", "MySQL", "Education Tech"],
+    link: "",
+  },
+  {
+    name: "ORS (Output Rating Sheet) System",
+    desc: "A comprehensive work performance tracking system for employees. Developed to streamline performance evaluations and output tracking for the institution's workforce. Similar to a KPI system but focused on output and performance metrics.",
+    tags: ["ASP.Net", "MySQL", "Performance Management"],
     link: "",
   },
   {
