@@ -125,7 +125,7 @@ export const experience: ExperienceType[] = [
     role: "Full Stack Developer",
     company: "CPRAS - The Cost and Procurement Advisory Service (London)",
     companyLogo: `${basePath}/img/icons/common/cpras_logo.png`,
-    date: "Jan 01, 2024 – Apr 30, 2026",
+    date: "Jan 01, 2024 - Apr 30, 2026",
     desc: "Served as Project Lead, architecting a comprehensive Government Procurement Framework system to streamline complex bidding and legal processes.",
     descBullets: [
       "Optimized application performance for international procurement standards and secure bank/card transactions.",
@@ -137,7 +137,7 @@ export const experience: ExperienceType[] = [
     role: "Full Stack Developer",
     company: "EBOS PH CO. LTD (Singapore)",
     companyLogo: `${basePath}/img/icons/common/ebos_logo.png`,
-    date: "May 01, 2022 – Nov 30, 2023",
+    date: "May 01, 2022 - Nov 30, 2023",
     desc: "Led the development of business-critical applications for Singaporean clients with a focus on security and data integrity.",
     descBullets: [
       "Engineered complex API architecture integrations including XERO Accounting, Stripe Payment, and Sanction Scanner.",
@@ -148,7 +148,7 @@ export const experience: ExperienceType[] = [
     role: "Full Stack Developer",
     company: "Davao del Sur State College (Philippines)",
     companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
-    date: "July 06, 2020 – May 25, 2022",
+    date: "July 06, 2020 - May 25, 2022",
     desc: "Headed digital transformation efforts for the institution's official web presence and internal systems.",
     descBullets: [
       "Developed the official college website and automated internal school processes to improve administrative efficiency.",
@@ -159,7 +159,7 @@ export const experience: ExperienceType[] = [
     role: "IT Faculty",
     company: "Davao del Sur State College (Philippines)",
     companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
-    date: "Sep 03, 2019 – June 26, 2020",
+    date: "Sep 03, 2019 - June 26, 2020",
     desc: "Instructed students in core technical disciplines including programming and web development.",
     descBullets: [
       "Provided hands-on training in mobile app development and modern web frameworks.",
@@ -193,8 +193,8 @@ export const projects: ProjectType[] = [
     link: "http://hris2.dssc.edu.ph:1952/login",
   },
   {
-    name: "Learning Management Resource System",
-    desc: "An enterprise-level E-Learning platform developed during the global shift to remote education. Focused on scalable resource delivery and user-friendly student interfaces.",
+    name: "Learning Resources Management System",
+    desc: "An enterprise-level Library Resources (Digital books) platform developed during the global shift to remote education. Focused on scalable library resource delivery and user-friendly student interfaces.",
     tags: ["Laravel", "MySQL", "Education Tech"],
     link: "",
   },
