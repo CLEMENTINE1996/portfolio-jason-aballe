@@ -13,11 +13,12 @@ import {
 import { basePath } from "./constant";
 
 export const greetings: GreetingsType = {
-  name: "Jason's Portfolio",
+  name: "Jason Aballe",
   title: "Full Stack Developer",
+  subTitle: "Specializing in Web, Application, and Database Development",
   description:
-    "Hi, I’m Jason Aballe. I’m a Full Stack Developer with over six years of experience building web and mobile applications. I enjoy turning complex problems into simple, functional solutions using Laravel and Vue.js. I’m always looking for new ways to learn and help teams build better digital experiences.",
-  resumeLink: "",
+    "Results-oriented Full Stack Developer with over 6 years of experience. I specialize in building scalable web applications and managing complex databases, with proven expertise collaborating with international teams across London, Singapore, and the Philippines.",
+  resumeLink: "https://drive.google.com/file/d/1Y9nMna2Dh8BLylQ51iUqYDc7Sz8TIDSm/view", // 
 };
 
 export const openSource = {
@@ -31,25 +32,44 @@ export const contact = {
 };
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:jasonaballe0@gmail.com",
+  url: "mailto:jasonaballe0@gmail.com",
+  email: "jasonaballe0@gmail.com",
   linkedin: "https://www.linkedin.com/in/jason-aballe-292b03299/",
   github: "https://github.com/CLEMENTINE1996",
 };
 
-export const skillsSection: SkillsSectionType = {
-  title: "What I do",
-  subTitle: "VERSATILE FULL STACK DEVELOPER WITH A PASSION FOR SYSTEM AUTOMATION",
+export const skillsSection : SkillsSectionType = {
+  title: "Technical Expertise",
+  subTitle: "Core Expertise & Development Tools",
+  categories: [
+    {
+      title: "Core Backend & Database",
+      skills: ["PHP (6 yrs)", "Laravel (5 yrs)", "MySQL", "PostgreSQL", "MSSQL", "RESTful APIs"], 
+    },
+    {
+      title: "Frontend & Design",
+      skills: ["JavaScript (6 yrs)", "Vue.js (2 yrs)", "React", "Tailwind CSS", "Bootstrap"], 
+    },
+    {
+      title: "Fintech & Integrations",
+      skills: ["XERO Accounting", "Stripe Payment", "Sanction Scanner", "API Architecture"], // 
+    },
+    {
+      title: "Tools & DevOps",
+      skills: ["Git/GitHub", "Docker", "cPanel", "Jira", "Postman", "VS Code", "Android Studio", "Joomla", "Visual Studio", "Sublime Text"], 
+    }
+  ],
   data: [
     {
       title: "Full Stack Development",
       lottieAnimationFile: `${basePath}/lottie/skills/fullstack.json`,
       skills: [
-        emoji("⚡ Developing responsive web applications using Laravel, Vue.js, and Codeigniter"),
-        emoji("⚡ Designing and managing MySQL, MSSQL, PostgreSQL, and SQLite databases"),
-        emoji("⚡ Integrating financial and compliance APIs: Xero, Stripe, and Sanction Scanner"),
-        emoji("⚡ Building mobile-friendly solutions and automating complex business workflows"),
-        emoji("⚡ Collaborating with international teams and following Agile methodologies"),
-        emoji("⚡ Continuously learning new technologies and best practices in software development"),
+        "Native PHP (6 yrs) & Laravel (5 yrs)", // 
+        "JavaScript (6 yrs), Vue.js (2 yrs), & React", // 
+        "ASP.Net, C#, Java, & Android Studio (2 yrs)", //
+        "Database Management: MySQL, PostgreSQL, & SQLite (5 yrs)", // 
+        "API Architecture: RESTful APIs, XERO, Stripe, & Sanction Scanner", // 
+        "Web Management: cPanel (3 yrs), Docker, & Version Control (Git/GitHub)", // 
       ],
       softwareSkills: [
         { skillName: "PHP", iconifyTag: "logos:php" },
@@ -68,6 +88,8 @@ export const skillsSection: SkillsSectionType = {
         { skillName: "Joomla", iconifyTag: "logos:joomla" },
         { skillName: "CPanel", iconifyTag: "logos:cpanel" },
         { skillName: "VS Code", iconifyTag: "logos:visual-studio-code" },
+        { skillName: "Docker", iconifyTag: "logos:docker-icon" },
+        { skillName: "Reactjs", iconifyTag: "logos:react" },
       ],
     },
   ],
@@ -82,15 +104,14 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "Southern Philippines Agri-Business and Marine and Aquatic School of Technology",
-    subHeader: "Bachelor of Science in Information Technology",
-    duration: "2015 - 2019",
-    desc: "Digos Campus | Best Capstone Award | Programming Champion",
-    grade: "",
+    schoolName: "Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)", // 
+    subHeader: "Bachelor of Science in Information Technology", // 
+    duration: "2015 - 2019", // 
+    desc: "Academic Achievements & Certifications:",
     descBullets: [
-      "Best Capstone Award Winner in SPAMAST Agency In-House Review (May 2019)",
-      "Champion in SPAMAST I.T. Day Programming Competition (2017 & 2019)",
-      "Passed TESDA Visual Graphics Designing NCIII (2017) and Computer Software Servicing NCII (2018)"
+      "Best Capstone Award Winner (May 2019) ",
+      "Champion: SPAMAST I.T. Day Programming Competition (2017 & 2019) ",
+      "TESDA: Computer Software Servicing NCII & Visual Graphics Designing NCIII ",
     ],
   },
 ];
@@ -98,74 +119,109 @@ export const educationInfo: EducationType[] = [
 export const experience: ExperienceType[] = [
   {
     role: "Full Stack Developer",
-    company: "CPRAS",
-    date: "Jan 01, 2024 - Apr 30, 2026",
+    company: "CPRAS - The Cost and Procurement Advisory Service (London)",
     companyLogo: `${basePath}/img/icons/common/cpras_logo.png`,
-    desc: "Main Developer for the B2B Procurement platform. Used Laravel, VueJS, and MySQL to manage UK government procurement opportunities and complex financial workflows.",
+    date: "Jan 01, 2024 – Apr 30, 2026",
+    desc: "Served as Project Lead, architecting a comprehensive Government Procurement Framework system to streamline complex bidding and legal processes.",
+    descBullets: [
+      "Optimized application performance for international procurement standards and secure bank/card transactions.",
+      "Managed large-scale databases and collaborated with London-based management to design feature roadmaps.",
+      "Partnered with technical teams in the Philippines to implement new system functionalities.",
+    ],
   },
   {
     role: "Full Stack Developer",
-    company: "EBOS SG / EBOS PH",
-    date: "May 01, 2022 - Nov 30, 2023",
+    company: "EBOS PH CO. LTD (Singapore)",
     companyLogo: `${basePath}/img/icons/common/ebos_logo.png`,
-    desc: "Enhanced marketplace and compliance platforms for Singapore clients. Integrated XERO, Stripe, and Sanction Scanner APIs using Laravel and Agile methodologies.",
+    date: "May 01, 2022 – Nov 30, 2023",
+    desc: "Led the development of business-critical applications for Singaporean clients with a focus on security and data integrity.",
+    descBullets: [
+      "Engineered complex API architecture integrations including XERO Accounting, Stripe Payment, and Sanction Scanner.",
+      "Automated financial workflows to enhance operational efficiency.",
+    ],
   },
   {
     role: "Full Stack Developer",
-    company: "Davao del Sur State College",
-    date: "July 06, 2020 - May 25, 2022",
+    company: "Davao del Sur State College (Philippines)",
     companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
-    desc: "Led the development of HRIS, Admission, and Scheduling systems and Application using Android Studio, Laravel, Codeigniter, and MySQL to automate institutional processes.",
+    date: "July 06, 2020 – May 25, 2022",
+    desc: "Headed digital transformation efforts for the institution's official web presence and internal systems.",
+    descBullets: [
+      "Developed the official college website and automated internal school processes to improve administrative efficiency.",
+      "Built and launched mobile applications to increase student accessibility to college services.",
+    ],
   },
   {
     role: "IT Faculty",
-    company: "Davao del Sur State College",
-    date: "Sept 03, 2019 - June 26, 2020",
+    company: "Davao del Sur State College (Philippines)",
     companyLogo: `${basePath}/img/icons/common/dssc_logo.png`,
-    desc: "Instructed students in programming, web development, and mobile development.",
+    date: "Sep 03, 2019 – June 26, 2020",
+    desc: "Instructed students in core technical disciplines including programming and web development.",
+    descBullets: [
+      "Provided hands-on training in mobile app development and modern web frameworks.",
+    ],
   },
 ];
-
 
 export const projects: ProjectType[] = [
   {
     name: "CPRAS Procurement Website",
-    desc: "B2B E-Procurement platform for UK organizations. Tools: VS Code, Laravel, VueJS, MySQL. Methodology: Agile & International Collaboration.",
-    link: "",
+    desc: "A comprehensive B2B E-Procurement platform for UK organizations. Engineered complex framework agreements and international collaboration tools using an Agile methodology.",
+    tags: ["Laravel", "VueJS", "MySQL", "Agile"],
+    link: "https://ukprocure.cpras.co.uk/",
   },
   {
     name: "Intellinz Business for Sale",
-    desc: "Business marketplace for Singapore clients. Integrated XERO, Stripe, and Sanction Scanner APIs using Laravel and MySQL.",
-    link: "",
+    desc: "A high-stakes business marketplace for Singaporean clients. Architected complex API integrations with XERO, Stripe, and Sanction Scanner for secure financial workflows.",
+    tags: ["Laravel", "XERO API", "Stripe", "Sanction Scanner"],
+    link: "https://intellinz.com/",
   },
   {
     name: "Corporate Secretarial Services",
-    desc: "Governance and compliance management system for Singapore business regulations. Developed with Laravel and Stripe integration.",
-    link: "",
+    desc: "Governance and compliance management system tailored for Singapore business regulations. Features automated secretarial filing and secure Stripe payment processing.",
+    tags: ["Laravel", "Stripe", "MySQL"],
+    link: "https://ebossi.ai/login",
   },
   {
-    name: "Human Resource Management System",
-    desc: "School automation and HRM system for DSSC. Built with Codeigniter and MySQL. Involved web and mobile development.",
-    link: "",
+    name: "DSSC Human Resource Management System",
+    desc: "Unified school automation and HRM system for Davao del Sur State College. Involved full-stack web development and mobile integration to improve administrative efficiency.",
+    tags: ["Codeigniter", "MySQL", "Android Studio", "PHP"],
+    link: "http://hris2.dssc.edu.ph:1952/login",
   },
   {
     name: "Learning Management Resource System",
-    desc: "E-Learning platform for online learning resources. Developed with Laravel and MySQL during the shift to remote education.",
+    desc: "An enterprise-level E-Learning platform developed during the global shift to remote education. Focused on scalable resource delivery and user-friendly student interfaces.",
+    tags: ["Laravel", "MySQL", "Education Tech"],
     link: "",
   },
   {
     name: "DSSC Admission System",
-    desc: "Rapidly developed student enrollment portal for efficient data processing during admission cycles. Tools: Laravel, MySQL, CPanel.",
+    desc: "Student enrollment portal built for rapid deployment and high-volume data processing. Streamlined the entire admission cycle from application to registration.",
+    tags: ["Laravel", "MySQL", "cPanel", "System Optimization"],
     link: "",
   },
   {
-    name: "DSSC Scheduling System and Android App",
-    desc: "Academic resource management portal and COVID-19 response visitation system built with Laravel.",
+    name: "DSSC Scheduling System & Android App",
+    desc: "Academic resource management portal and a COVID-19 response visitation tracker. Bridged the gap between web administration and mobile accessibility.",
+    tags: ["ASP.Net", "Android", "Real-time Data"],
     link: "",
   },
   {
-    name: "College Official Website",
-    desc: "Main CMS for DSSC. Developed using Joomla and CPanel. Includes training facilitation for staff users.",
+    name: "College Official Website (DSSC)",
+    desc: "The primary CMS and digital face of DSSC. Developed with a custom Joomla architecture and provided technical training for institutional staff.",
+    tags: ["Joomla", "cPanel", "Content Management", "PHP"],
+    link: "https://dssc.edu.ph/",
+  },
+  {
+    name: "SunMade Rice Mill Website",
+    desc: "A modern corporate digital presence featuring a product catalog and internal resource management. Optimized for fast frontend performance.",
+    tags: ["React", "JavaScript", "Frontend Architecture"],
+    link: "https://clementine1996.github.io/sunmadeph/",
+  },
+  {
+    name: "J & E Alba - Antonio Cargo Forwarding",
+    desc: "Logistics and trucking service platform. Features service showcases and secure communication infrastructures for regional cargo operations.",
+    tags: ["Laravel", "Bootstrap", "Logistics Tech"],
     link: "",
   }
 ];

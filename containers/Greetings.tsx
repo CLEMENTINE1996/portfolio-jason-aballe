@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { greetings } from "../portfolio";
 import { Button, Container, Row, Col } from "reactstrap";
 import GreetingLottie from "../components/DisplayLottie";
@@ -6,61 +6,30 @@ import SocialLinks from "../components/SocialLinks";
 import { basePath } from "../constant";
 
 const Greetings = () => {
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement!.scrollTop = 0;
-  }); 
-
   return (
     <main>
-      <div className="position-relative">
-        <section className="section section-lg section-shaped pb-250">
-          <div className="shape shape-style-1 bg-gradient-green">
-          </div>
-          <Container className="py-lg-md d-flex mt-5">
-            <div className="col px-0">
-              <Row>
-                <Col lg="6">
+      <section className="section section-lg section-hero bg-gradient-custom d-flex align-items-center">
+        <Container>
+          <div className="hero-card mt-6">
+            <Row className="align-items-center">
+              <Col lg="6" className="order-lg-2">
+                <div className="lottie-wrapper">
                   <GreetingLottie animationPath={`${basePath}/lottie/coding.json`} />
-                </Col>
-                <Col lg="6">
-                  <h1 className="display-3 text-white">{greetings.title + " "}</h1>
-                  <p className="lead text-white">{greetings.description}</p>
+                </div>
+              </Col>
+              <Col lg="6" className="order-lg-1">
+                <h1 className="hero-title">{greetings.subTitle}</h1>
+                <p className="hero-description mt-3">
+                  {greetings.description}
+                </p>
+                <div className="mt-4">
                   <SocialLinks />
-                  {greetings.resumeLink && (
-                    <div className="btn-wrapper my-4">
-                      <Button
-                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                        color="default"
-                        href={greetings.resumeLink}
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-file" />
-                        </span>
-                        <span className="btn-inner--text">See My Resume</span>
-                      </Button>
-                    </div>
-                  )}
-                </Col>
-              </Row>
-            </div>
-          </Container>
-          {/* SVG separator */}
-          <div className="separator separator-bottom separator-skew">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-            <polygon className="fill-white" points="0 0 0 100 2560 100" />
-            </svg>
+                </div>
+              </Col>
+            </Row>
           </div>
-        </section>
-        {/* 1st Hero Variation */}
-      </div>
+        </Container>
+      </section>
     </main>
   );
 };

@@ -1,3 +1,192 @@
-body > div:first-child {
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Neutral Slate Palette - Easier on the eyes */
+  --bg-body: #1e293b;       /* Slate 800 */
+  --bg-card: #0f172a;       /* Slate 900 */
+  --accent-primary: #38bdf8; /* Sky Blue */
+  --accent-secondary: #818cf8; /* Indigo */
+  
+  /* High Visibility Text */
+  --text-heading: #f8fafc;  /* Slate 50 */
+  --text-body: #94a3b8;     /* Slate 400 */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-body) !important;
+  color: var(--text-body) !important;
+}
+
+/* Section Headings */
+h1, h2, h3, .display-3 {
+  color: var(--text-heading) !important;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Card Styling with subtle borders */
+.card, .glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlight Text */
+.text-cyan {
+  color: var(--accent-primary) !important;
+}
+
+/* Button with contrast */
+.btn-primary-custom {
+  background: var(--accent-primary);
+  color: #0f172a !important;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 12px 24px;
+  border: none;
+}
+
+.navbar-main{
+  border-bottom: 1px solid white !important;
+}
+
+.nav-glass {
+  background: rgba(10, 25, 47, 0.8) !important; /* Matches your background with transparency */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link-inner--text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+.nav-link-inner--text:hover {
+  opacity: 0.7;
+}
+
+.project-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.text-cyan {
+  color: #22d3ee !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.text-cyan:hover {
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+/* Glass Card Border Glow */
+.glass-card {
+  background: rgba(25, 35, 51, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease !important;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-cyan) !important;
+}
+
+/* Tech Icon Hover Effect */
+.tech-icon-hover {
+  background: whitesmoke !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+.tech-icon-hover:hover {
+  transform: translateY(-10px) scale(1.2);
+  border-color: #22d3ee !important;
+  color: #22d3ee !important;
+  box-shadow: 0 10px 20px rgba(34, 211, 238, 0.2);
+}
+
+/* Proficiency Card Glow */
+.proficiency-wrapper {
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.proficiency-wrapper:hover {
+  border-bottom-color: #22d3ee;
+  background: rgba(30, 41, 59, 0.9) !important;
+}
+
+/* High-Contrast Badges */
+.badge-outline-cyan {
+  background: transparent !important;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  color: #22d3ee !important;
+  font-weight: 500;
+}
+
+.badge-outline-cyan:hover {
+  background: #22d3ee !important;
+  color: #0f172a !important;
+}
+
+/* Utility Colors */
+.text-cyan { color: #22d3ee !important; }
+.text-dim { color: #94a3b8 !important; }
+
+/* Footer Card Styling */
+.footer-card {
+  background: rgba(30, 41, 59, 0.7) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-top: 4px solid #22d3ee !important; /* The signature cyan glow */
+}
+
+.footer-avatar {
+  width: 180px;
+  border: 4px solid rgba(34, 211, 238, 0.2);
+  transition: all 0.4s ease;
+}
+
+.footer-avatar:hover {
+  transform: rotate(5deg) scale(1.05);
+  border-color: #22d3ee;
+}
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Subtle background pulse for the avatar */
+.avatar-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.1);
+  z-index: -1;
+}
+
+.text-dim {
+  color: #94a3b8 !important;
+}
+
+.bg-main {
+  background-color: #0f172a !important; /* Deep Navy */
 }

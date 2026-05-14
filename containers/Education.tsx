@@ -1,50 +1,42 @@
 import React from "react";
-import EducationCard from "../components/EducationCard";
 import { educationInfo } from "../portfolio";
 import { Container, Row, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 
 const Education = () => {
   return (
-    educationInfo && (
-      <Fade bottom duration={2000}>
-        <section className="section pb-0 bg-gradient-green my-5 pb-150">
-          <Container>
-            <div className="d-flex px-3">
-              <div>
-                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-success">
-                  <i className="ni ni-books text-success" />
-                </div>
-              </div>
-              <div className="pl-4">
-                <h4 className="display-3 text-white">Education</h4>
-              </div>
-            </div>
-            <Row className="row-grid align-items-center">
-              {educationInfo.map(info => {
-                return (
-                  <Col className="order-lg-1" lg="6" key={info.schoolName}>
-                    <EducationCard {...info} />
-                  </Col>
-                );
-              })}
-            </Row>
-          </Container>
-          <div className="separator separator-bottom separator-skew zindex-100">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon className="fill-white" points="0 0 0 100 2560 100" />
-            </svg>
+    <section className="section section-lg section-glass bg-main">
+      <Container>
+        <Fade bottom duration={2000}>
+          <div className="d-flex align-items-center mb-5">
+            <h2 className="display-3 text-white mb-0">Academic Background</h2>
           </div>
-        </section>
-      </Fade>
-    )
+          <Row>
+            {educationInfo.map((info, i) => (
+              <Col lg="12" key={i} className="mb-4">
+                <div className="glass-card p-4 d-md-flex align-items-center">
+                  <div className="mr-4 text-center">
+                    <h4 className="text-cyan font-weight-bold mb-0">{info.duration}</h4>
+                  </div>
+                  <div className="border-left pl-md-4 ml-md-2 border-dim">
+                    <h3 className="text-white h4 mb-1">{info.schoolName}</h3>
+                    <h5 className="text-cyan mb-2">{info.subHeader}</h5>
+                    <p className="text-dim mb-0 italic">{info.desc}</p>
+                    {info.descBullets && (
+                      <ul className="mt-2 text-dim">
+                        {info.descBullets.map((bullet, idx) => (
+                          <li key={idx}>{bullet}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Fade>
+      </Container>
+    </section>
   );
 };
 

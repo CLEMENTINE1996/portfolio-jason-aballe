@@ -18,6 +18,7 @@ export type SocialLinksType = {
 export type GreetingsType = {
   name: string;
   title: string;
+  subTitle?: string;
   description?: string;
   resumeLink?: string;
 };
@@ -36,9 +37,15 @@ type SkillType = {
   softwareSkills: SoftwareSkillType[];
 };
 
+type SkillCategoryType = {
+  title: string;
+  skills: string[];
+};
+
 export type SkillsSectionType = {
   title: string;
   subTitle: string;
+  categories: SkillCategoryType[];
   data: SkillType[];
 };
 
@@ -78,6 +85,7 @@ export type ProjectType = {
   desc: string;
   github?: string;
   link?: string;
+  tags: string[];
 };
 
 // * FEEDBACK SECTION
