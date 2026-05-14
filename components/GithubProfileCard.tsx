@@ -24,7 +24,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
                 <h2 className="display-3 text-white mb-2">Let's build something together</h2>
                 <p className="lead text-dim mb-4">
                   Ready to start your next project or looking for a developer to join your team? 
-                  I'm just a click away.
+                  I&#39;m just a click away.
                 </p>
                 <div className="d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
                   <SocialLinks />
