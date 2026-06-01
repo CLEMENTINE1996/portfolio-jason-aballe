@@ -43,34 +43,34 @@ export const skillsSection : SkillsSectionType = {
   categories: [
     {
       title: "Core Backend & Database",
-      skills: ["PHP (6 yrs)", "Laravel (5 yrs)", "CodeIgniter (2 yrs)", "C# ASP.Net (1.5 yrs)", "MySQL", "PostgreSQL", "MSSQL", "SQLLite", "RESTful APIs"], 
+      skills: ["PHP (6 yrs)", "Laravel (5 yrs)", "CodeIgniter (2 yrs)", "C# ASP.Net (1.5 yrs)", "Node.js (5 months)", " Nest.js (4 months)", "Knex.js (4 months)", "MySQL", "PostgreSQL", "MSSQL", "SQLLite", "RESTful APIs"], 
     },
     {
       title: "Frontend & Design",
-      skills: ["JavaScript & jQuery (6 yrs)", "Vue.js (2 yrs)", "React", "Tailwind CSS", "Bootstrap"], 
+      skills: ["JavaScript & jQuery (6 yrs)", "Vue.js (2 yrs)", "React", "Next.js", "Tailwind CSS", "Bootstrap"], 
     },
     {
-      title: "Mobile Application Development",
-      skills: ["Android Studio (2 yrs)", "Java"], 
+      title: "Tools & DevOps",
+      skills: ["Git/GitHub", "Docker", "cPanel", "Jira", "Postman", "VS Code", "Android Studio", "Joomla", "Visual Studio", "Sublime Text", "NetBeans"], 
     },
     {
       title: "Fintech & Integrations",
       skills: ["XERO Accounting", "Stripe Payment", "Sanction Scanner", "API Architecture"],
     },
     {
-      title: "Tools & DevOps",
-      skills: ["Git/GitHub", "Docker", "cPanel", "Jira", "Postman", "VS Code", "Android Studio", "Joomla", "Visual Studio", "Sublime Text", "NetBeans"], 
-    }
+      title: "Mobile Application Development",
+      skills: ["Android Studio (2 yrs)", "Java"], 
+    },
   ],
   data: [
     {
       title: "Full Stack Development",
       lottieAnimationFile: `${basePath}/lottie/skills/fullstack.json`,
       skills: [
-        "Native PHP (6 yrs), Laravel (5 yrs), and CodeIgniter (2 yrs)", // 
-        "JavaScript (6 yrs), Vue.js (2 yrs), & React", // 
+        "Native PHP (6 yrs), Laravel (5 yrs), CodeIgniter (2 yrs), Node.js, and Nest.js", // 
+        "JavaScript (6 yrs), Vue.js (2 yrs), Next.js, & React", // 
         "ASP.Net, C#, Java, & Android Studio (2 yrs)", //
-        "Database Management: MySQL, PostgreSQL, & SQLite (5 yrs)", // 
+        "Database Management: MySQL, PostgreSQL, & SQLite (5 yrs), and Knex.js", // 
         "API Architecture: RESTful APIs, XERO, Stripe, & Sanction Scanner", // 
         "Web Management: cPanel (3 yrs), Docker, & Version Control (Git/GitHub)", // 
       ],
@@ -93,6 +93,13 @@ export const skillsSection : SkillsSectionType = {
         { skillName: "VS Code", iconifyTag: "logos:visual-studio-code" },
         { skillName: "Docker", iconifyTag: "logos:docker-icon" },
         { skillName: "Reactjs", iconifyTag: "logos:react" },
+        { skillName: "Nextjs", iconifyTag: "logos:nextjs" },
+        { skillName: "Nodejs", iconifyTag: "logos:nodejs" },
+        { skillName: "Nestjs", iconifyTag: "logos:nestjs" },
+        { skillName: "Knexjs", iconifyTag: "logos:knex" },
+        { skillName: "Tailwind CSS", iconifyTag: "logos:tailwindcss-icon" },
+        { skillName: "Bootstrap", iconifyTag: "logos:bootstrap" },
+        { skillName: "Postman", iconifyTag: "logos:postman-icon" },
       ],
     },
   ],
